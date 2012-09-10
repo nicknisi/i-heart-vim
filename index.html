@@ -51,7 +51,7 @@
 
                     <ul>
                         <li>IDEs are too bulky/hard to configure/adding JAR files</li>
-                        <li>Sharing confiuration is easy</li>
+                        <li>Sharing configuration is easy</li>
                         <li>Passion!</li>
                     </ul>
                 </section>
@@ -71,7 +71,7 @@
                     <h2>Workflow</h2>
 
                     <ul>
-                        <li>Termianl vim</li>
+                        <li>Terminal vim</li>
                         <li>tmux</li>
                         <li>CAPS LOCK!</li>
                     </ul>
@@ -88,7 +88,7 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Favoite shortcuts</h2>
+                        <h2>Favorite shortcuts</h2>
                     </section>
                     <section>
                         <h2>Disable Arrow Keys</h2>
@@ -108,23 +108,23 @@ noremap! &lt;Right&gt; &lt;Esc&gt;
                         <h2>Splits!</h2>
                         <p>effortless spliting!</p>
 <pre><code>
-  function! WinMove(key)¬
-      let t:curwin = winnr()¬
-      exec "wincmd ".a:key¬
-      if (t:curwin == winnr())¬
-          if (match(a:key,'[jk]'))¬
-              wincmd v¬
-          else¬
-              wincmd s¬
-          endif¬
-          exec "wincmd ".a:key¬
+function! WinMove(key)¬
+  let t:curwin = winnr()¬
+  exec "wincmd ".a:key¬
+  if (t:curwin == winnr())¬
+      if (match(a:key,'[jk]'))¬
+          wincmd v¬
+      else¬
+          wincmd s¬
       endif¬
-  endfunction¬
+      exec "wincmd ".a:key¬
+  endif¬
+endfunction¬
 
-  map &lt;silent&gt; &lt;C-h&gt; :call WinMove('h')&lt;cr&gt;¬
-  map &lt;silent&gt; &lt;C-j&gt; :call WinMove('j')&lt;cr&gt;¬
-  map &lt;silent&gt; &lt;C-k&gt; :call WinMove('k')&lt;cr&gt;¬
-  map &lt;silent&gt; &lt;C-l&gt; :call WinMove('l')&lt;cr&gt;¬
+map &lt;silent&gt; &lt;C-h&gt; :call WinMove('h')&lt;cr&gt;¬
+map &lt;silent&gt; &lt;C-j&gt; :call WinMove('j')&lt;cr&gt;¬
+map &lt;silent&gt; &lt;C-k&gt; :call WinMove('k')&lt;cr&gt;¬
+map &lt;silent&gt; &lt;C-l&gt; :call WinMove('l')&lt;cr&gt;¬
 </code></pre>
                     </section>
                 </section>
